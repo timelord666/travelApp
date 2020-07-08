@@ -1,37 +1,61 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Weather Journal</title>
-<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="ru">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
 </head>
- <body>
-<div id = "app">
-  <div class ="holder headline">
-    Weather Journal App
-  </div>
-  <div class ="holder zip">
-    <label for="zip">Enter address here</label>
-    <input type="text" id="address" placeholder="enter address here">
-  </div>
-  <div class ="holder feel">
-    <label for="date">Enter trip date</label>
-    <input id="date" type="date" class="myInput"  ></input>
-    <label for="date">Enter end date</label>
-    <input id="dateEnd" type="date" class="myInput"></input>
-    <button id="generate" type = "submit"> Generate </button>
-  </div>
-  <div class ="holder entry">
-    <div class = "title">Most Recent Entry</div>
-   <div id = "entryHolder">
-    <div id = "date"></div> 
-   <div id = "temp"></div>
-   <div id = "content"></div>
-  </div>
-  </div>
-  </div>
+
+<body>
+    <div class="container">
+
+        <div class="travel_list">
+            <h1>Travel App</h1>
+            <div class="create_new_travel">
+                <label for="address">Enter address here</label>
+                <input type="text" name="address"  id="address" placeholder="enter address here">
+                <label for="date">Enter trip date</label>
+                <input id="date" type="date" name="date" ></input>
+                <label for="dateEnd">Enter end date</label>
+                <input id="dateEnd" type="date" name="dateEnd" ></input>
+                <button class="add">Add</button>
+
+            </div>
+
+            <div class="wrapper">
+                <ul class="trips">
+                    
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
 
 
 </body>
+
 </html>
+
+
+
+<!-- <li>
+    <div class="length">
+        <p>
+            Length of the trip: 3 day(s)
+        </p>
+    </div>
+    <div class="weather">
+        <p>cloudy</p>
+
+
+    </div>
+    <div class="pic">
+        <img src="https://cdn2.thecatapi.com/images/2ls.jpg" alt="">
+    </div>
+</li> -->
