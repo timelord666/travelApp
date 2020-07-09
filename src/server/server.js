@@ -19,23 +19,9 @@ app.use(cors());
 app.use(express.static('dist'));
 app.use(bodyParser.json());
 
-app.get('/recent', (req, res) => {
-    res.send(projectData[projectData.length - 1]);
-})
-
-app.post('/save', (req, res) => {
-    let data = {
-        temperature: req.body.temperature,
-        date: req.body.date,
-        userResponse: req.body.userResponse,
-    };
 
 
-    projectData.push(data);
 
-    
-    res.send('worked');
-})
 
 
 app.get('/key', (req, res) => {

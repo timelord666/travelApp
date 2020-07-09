@@ -12,7 +12,7 @@ export function update(length, weather, day, pics) {
         <div class="weather">
             <p>Wind speed: ${weather.data[day].wind_spd}</p>
             <p>High temp: ${weather.data[day].high_temp} <br> 
-               Low temp: ${weather.data[day].low_temp} 
+                Low temp: ${weather.data[day].low_temp} 
             </p>
             <p> Weather: ${weather.data[day].weather.description} </p>
         </div>

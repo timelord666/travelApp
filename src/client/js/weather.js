@@ -14,7 +14,7 @@ export async function getWeather(lat, lng) {
 
 
     if (key) {
-        console.log(key);
+
         
         
 

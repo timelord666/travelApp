@@ -14,7 +14,7 @@ export async function getPic(query) {
     }
 
     if (key) {
-        console.log(key);
+
 
 
         const url = `https://pixabay.com/api/?key=${key}&q=${encodeURIComponent(query)}&image_type=photo&category=travel`;
