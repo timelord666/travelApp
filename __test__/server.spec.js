@@ -1,11 +1,11 @@
 import request from 'supertest';
 import '@babel/polyfill';
-import server from '../src/server/server';
+import app from '../src/server/app';
 
 
 describe('get key', () => {
     test('status',  async () => {
-        const response = await request(server).get('/key');
+        const response = await request(app).get('/key');
         expect(response.status).toBe(200);
         
         
