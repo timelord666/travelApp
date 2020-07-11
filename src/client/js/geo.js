@@ -1,4 +1,4 @@
-export async function getCoordinates(address) {
+export async function getCoordinates(address) { 
     address = encodeURIComponent(address);
     const url = 'http://api.geonames.org/geoCodeAddressJSON?q=' + address + '&username=timelord';
 

@@ -1,10 +1,6 @@
 export async function getPic(query) {
-
     const keyResp = await fetch('/pickey');
     let key;
-
-
-
     try {
         key = await keyResp.json();
 
@@ -12,11 +8,9 @@ export async function getPic(query) {
         console.log(e);
 
     }
+    // first we get api key from our server side, then retrieving pics 
 
-    if (key) {
-
-
-
+    if (key) { // check for key 
         const url = `https://pixabay.com/api/?key=${key}&q=${encodeURIComponent(query)}&image_type=photo&category=travel`;
 
         const response = await fetch(url);
@@ -28,8 +22,7 @@ export async function getPic(query) {
             console.log(e);
             
         }
-
-
-
+    } else {
+        console.log('sorry no key');
     }
 }

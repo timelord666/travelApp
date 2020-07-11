@@ -39,11 +39,21 @@ input[type=text] {
     width: 376px;
     padding: 10px;
 }
+input[type=date] {
+    width: 376px;
+    padding: 10px;
+
+}
+ 
 
 button {
     margin-top: 10px;
     width: 400px;
     padding: 10px;
+    
+}
+
+button:hover {
     cursor: pointer;
 }
 
@@ -55,6 +65,7 @@ button {
     padding: 1em;
     list-style-type: none;
     border: 1px solid green;
+    margin-top: 10px;
 }
 
 .trips li:not(:last-child) {
@@ -74,4 +85,26 @@ label {
 .pic img {
     width: 100%;
    
+}
+
+
+// media section
+
+
+@media(max-width: 522px) {
+    input[type=text] {
+        width: 90%;
+
+    }
+
+    input[type=date] {
+        width: 90%;
+
+    }
+
+    button {
+
+        width: 90%;
+
+    }
 }
